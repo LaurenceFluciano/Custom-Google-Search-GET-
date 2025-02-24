@@ -1,0 +1,115 @@
+.form-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100dvw;
+    height: auto;
+    margin: auto;
+}
+
+.search-widget {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    padding-left: auto;
+    padding-right: auto;
+}
+
+/* search area */
+
+.search-area{
+    display: flex;
+    max-width: 650px;
+    width: 90vw;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    margin-bottom: 2rem;
+    box-shadow: 0px 0px 3px var(--text-black);
+    border: 1px solid var(--text-black);
+    border-radius: 8px;
+    transition: 500ms;
+}
+
+.default-bar {
+    height: 100%;
+    font-size: 1.5rem;
+    border-radius: 8px;
+    padding: 0.35rem 0.5rem;
+    border: none;
+    transition: 500ms;
+}
+
+.search-bar {
+    padding-left: 0.55rem;
+    width: 90%;
+    color: var(--text-black) !important;
+}
+
+.search-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.75rem;
+    width: 10%;
+    min-width: 45px;
+    cursor: pointer;
+}
+
+.search-area:hover{
+    padding: 0.1rem;
+}
+
+.search-area:hover .search-icon{
+    animation: lupeAnimation 2s forwards ease-in-out infinite !important;
+}
+
+@keyframes lupeAnimation {
+    0% {
+        transform: rotate(0deg);
+    }
+    66% {
+        transform: rotate(25deg)
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+} 
+
+
+.search-area:focus-within .default-bar{
+    outline: none;
+    color: var(--primary-blue);
+    transition: 500ms;
+}
+
+.search-area:focus-within {
+    box-shadow: 0px 0px 3px var(--primary-blue);
+    border: 1px solid var(--primary-blue);
+    transition: 500ms;
+    padding: 0.1rem 0.5rem;
+}
+
+/* Button search */
+
+.btn-search {
+    padding: 0.5rem 1rem;
+    border: none;
+    font-weight: 400;
+    border: solid 1px var(--border-gray);
+    box-shadow: 0px 0px 3px var(--border-gray);
+    font-size: clamp(12px, 5vw, 18px);
+    border-radius: 8px;
+    transition: 500ms;
+}
+
+.btn-search:hover {
+    transition: 500ms;
+    border-color: var(--primary-blue);
+    color: var(--primary-blue);
+    background-color: var(--hover-gray);
+}
+
+

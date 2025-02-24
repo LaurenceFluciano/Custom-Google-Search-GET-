@@ -1,0 +1,29 @@
+.header-container {
+    width: 100dvw;
+    height: auto;
+    border: solid 1px var(--border-gray);
+    box-shadow: 0px 0px 3px var(--border-gray);
+}
+
+.nav-container {
+    display: flex;
+    width: auto;
+}
+
+.link-item-nav {
+    text-decoration: none;
+    padding: 0.75rem clamp(0.3rem, 0.55rem, 1rem);
+    transition: 250ms;
+    cursor: pointer;
+}
+
+.item-nav {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--icon-gray);
+}
+
+.link-item-nav:hover {
+    transition: 250ms;
+    background-color: var(--hover-gray);
+}
