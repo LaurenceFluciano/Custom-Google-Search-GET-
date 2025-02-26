@@ -7,17 +7,29 @@
     <link rel="stylesheet" href="assets/stylesheets/config.css">
     <link rel="stylesheet" href="assets/stylesheets/header.css">
     <link rel="stylesheet" href="assets/stylesheets/footer.css">
+    <link rel="stylesheet" href="assets/stylesheets/form.css">
     <title>Google Search</title>
 </head>
 <body>
     <header class="header-container">
         <nav class="nav-container">
             <a href="index.html" class="link-item-nav"><span class="item-nav">Google Search</span></a>
-            <a href="image.html" class="link-item-nav"><span class="item-nav">Google Advanced Search</span></a>
-            <a href="advanced.html" class="link-item-nav"><span class="item-nav">Google Image Search</span></a>
+            <a href="advanced.html" class="link-item-nav"><span class="item-nav">Google Advanced Search</span></a>
+            <a href="image.html" class="link-item-nav"><span class="item-nav">Google Image Search</span></a>
         </nav>
     </header>
-
+    <form action="https://www.google.com/search" class="form-container" >
+        <div class="search-widget">
+            <div class="search-area">
+                <input type="hidden" type="text" id="isch" name="tbm" value="isch">
+                <input type="text" id="search" name="q" class="search-bar default-bar" autocomplete="off" required>
+                <input type="submit" value="search" class="search-icon material-symbols-outlined default-bar "/>
+            </div>
+        </div>
+        <div class="search-widget">
+            <input type="submit" value="Google Search" class="btn-search">
+        </div>
+    </form>
     <footer class="footer-container">
         <span class="footer-info">Made by Laurence using Google Search API</span>
     </footer>
